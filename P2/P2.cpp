@@ -16,7 +16,7 @@ std::unordered_map<std::vector<T>, int> getNgrams(std::vector<T> words, int n) {
 	int count = 0;
 	
 	//go through each word (up until the n-th last word because that would eb the last gram)
-	for (auto i = words.begin(); i != words.end() - n ; i++)
+	for (auto i = words.begin(); i != words.end() - n + 1 ; i++)
 	{
 		//create a vector of the ngram for the corresponding word in the string
 		std::vector<T> ngram(n);
@@ -34,7 +34,7 @@ std::unordered_map<std::vector<T>, int> getNgrams(std::vector<T> words, int n) {
 
 void P2(std::string fileName, std::string fileName2, int n, int print) {
 
-	int didnotoccur = 0;
+	double didnotoccur = 0;
 	std::string strOneLine;
 	std::vector<T> wordVector1, wordVector2;
 	std::ifstream inFile(fileName), inFile2(fileName2);
@@ -72,7 +72,7 @@ void P2(std::string fileName, std::string fileName2, int n, int print) {
 		std::vector<T> gram = i->first;
 
 		//if the gram isn't in the first text, add it to the count of no occurances
-		if (text1Ngrams.count(gram) > 0) {
+		if (text1Ngrams.count(gram) == 0) {
 			didnotoccur++;
 		}
 		else if (print == 1) { // if it's in there and print is true, print it!
@@ -83,7 +83,8 @@ void P2(std::string fileName, std::string fileName2, int n, int print) {
 		}
 	}
 	//print percentage of ngrams in second text file not occuring in the first
-	std::cout << didnotoccur / text2Ngrams.size() * 100.000 << std::endl;
+	double percent = didnotoccur * 100 / text2Ngrams.size() ;
+	std::cout << percent << std::endl;
 }
 
 int main(int argc, char** argv)
