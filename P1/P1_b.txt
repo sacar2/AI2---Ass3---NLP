@@ -1,0 +1,7 @@
+50% for dostoevskykaramazof: 
+	P1("DostoevskyKaramazov.txt", 96);
+	50.0501%
+
+50% for Dr.Seuss.txt:
+	P1("DrSeuss.txt", 51);
+	50.146%
