@@ -8,13 +8,56 @@
 	50.146%
 
 ====================== 2(b) ========================
+n = 1: 51.4951 %
+n = 2: 76.5353 %
+n = 3: 91.4494%
+n = 4: 98.0414%
+n = 5: 99.6251%
+n = 6: 99.9221%
 
+When n is equal to 6, it gives nearly 100% 
+no common n grams, at 99.9221%.
+ 
+Continuing the process, when n=9, the largest 
+common nGram for the files is, 
+"on the table and his head in his hand.", giving
+99.9994 % no common grams.
 
+When n=10, there are 100% NO common grams.
 
 ====================== 2(c) ========================
+n = 1: 52.139%
+n = 2: 83.7131%
+n = 3: 96.0278%
+n = 4: 99.4296%
+n = 5: 99.9259%
+n = 6: 99.9869%
+n = 7: 99.9988%
+n = 8: 100%
 
+"there is no such thing as a" is the longest ngram 
+between Dickens.txt and KafkaTrial.txt.
+
+When n = 8, there is 100% NO common grams.
 
 ====================== 2(d) ========================
+n = 1: 90.659%
+n = 2: 98.1364%
+n = 3: 99.6357%
+n = 4: 99.9364%
+n = 5: 99.9911%
+n = 6: 99.9992%
+n = 7: 100%
 
+The longest ngrams, when n = 6 are:
+"is the same as that of"
+"to keep up the rate of"
+"in order to keep up the"
+When n = 7, there is 100% NO common grams.
 
 ====================== 2(e) ========================
+Comparing my findings from 2b-d, I can conclude that 
+the same writer will have higher ngrams, while 
+different writers especially of different styles
+will have more varied text, and will have less 
+similar grams.

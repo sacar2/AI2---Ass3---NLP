@@ -1,2 +1,7 @@
-﻿  Ngrams.vcxproj -> C:\Users\sacar2\Documents\AI\A3_Selin_Denise_Acar\Debug\Ngrams.exe
+﻿  test.cpp
+c:\users\sacar2\documents\ai\a3_selin_denise_acar\ngrams\test.cpp(61): warning C4018: '<=': signed/unsigned mismatch
+  fileRead.cpp
+  Generating Code...
+fileRead.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+  Ngrams.vcxproj -> C:\Users\sacar2\Documents\AI\A3_Selin_Denise_Acar\Debug\Ngrams.exe
   Ngrams.vcxproj -> C:\Users\sacar2\Documents\AI\A3_Selin_Denise_Acar\Debug\Ngrams.pdb (Full PDB)

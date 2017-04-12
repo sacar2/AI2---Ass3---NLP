@@ -2,14 +2,6 @@
 
 typedef std::string T;
 
-// Driver function to sort the vector elements
-// by second element of pairs
-bool sortBySecondElement(const std::pair<std::string, int> &a,
-	const std::pair<std::string, int> &b)
-{
-	return (a.second < b.second);
-}
-
 //collect the ngrams for a file
 std::unordered_map<std::vector<T>, int> getNgrams(std::vector<T> words, int n) {
 	std::unordered_map<std::vector<T>, int> grams;
